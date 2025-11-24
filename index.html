@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="СКА им. А.С.Демченко" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>SCA</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo logo">
+        <img src="./images/logo.png" alt="Логотип сайта" />
+      </div>
+      <nav class="menu-list">
+        <a href="#" class="menu-link menu-link_active"
+          >Главная</a
+        >
+        <a href="#" class="menu-link">История клуба</a>
+        <a href="#" class="menu-link">О нас</a>
+        <a href="#" class="menu-link">Тренировки</a>
+        <a href="#" class="menu-link">Мероприятия и события</a>
+        <a href="#" class="menu-link">Новости</a>
+        <a href="#" class="menu-link">Интересные статьи</a>
+        <a href="#" class="menu-link">Галерея</a>
+      </nav>
+    </header>
+    <main class="home-main">
+      <section class="home-main__section home-main__cover-block">
+        <div class="home-main__cover-images">
+          <div class="home-main__cover-image">
+            <img src="./images/3.jpg" alt="Альпинист на горе" />
+          </div>
+
+          <div class="home-main__cover-image">
+            <img src="./images/7.png" alt="Альпинист а горе" />
+          </div>
+        </div>
+        <div class="home-main__cover-info">
+          <h1 class="home-main__cover-title">Альпинизм - больше, чем просто вершина, это путь к себе</h1>
+          <p class="home-main__cover-paragraph">
+            Вы когда-нибудь замирали, глядя на величественный горный пик, и
+            чувствовали тихий зов? Этот зов — не просто вызов высоты. Это
+            приглашение выйти за границы привычного, узнать истинную меру своих
+            сил и увидеть мир с такой точки, где остаются лишь ветер, скалы и
+            бесконечное небо. Этот зов — суть альпинизма.
+          </p>
+          <div class="home-main__cover-button-list">
+            <a href="#">Галлерея</a>
+            <a href="#">Тенировки</a>
+          </div>
+        </div>
+      </section>
+      <section class="home-main__section home-main__news">
+        <h2>Новости</h2>
+        <ul class="home-main__news-list">
+          <li class="home-main__news-item">
+            <a href="#" class="news">
+              <article class="home-main__news-container">
+                <div class="news__image">
+                  <img src="./images/1.jpg" alt="Альпинист">
+                </div>
+                <span class="news__date">11.09.2022</span>
+                <h3 class="news__title">Команда клуба успешно покорила пик Корженевской</h3>
+                <p class="news__paragraph">Группа альпинистов нашего клуба завершила восхождение на один из самых технически сложных семитысячников Памира. Экспедиция длилась две недели, участники столкнулись со сложными погодными условиями, но благополучно достигли вершины. Сейчас команда возвращается в базовый лагерь и готовится к акклиматизации для следующего восхождения.</p>
+              </article>
+            </a>
+          </li>
+
+          <li class="home-main__news-item">
+            <a href="#" class="news">
+              <article class="home-main__news-container">
+                <div class="news__image">
+                  <img src="./images/2.jpg" alt="Альпинист">
+                </div>
+                <span class="news__date">04.05.2025</span>
+                <h3 class="news__title">Открыта запись на зимний курс по высотному альпинизму</h3>
+                <p class="news__paragraph">Стартует набор в новую обучающую программу, рассчитанную на альпинистов с базовым уровнем подготовки. Курс включает ледовые занятия, работу с верёвками, безопасность на маршрутах и ночёвки в условиях высокогорья. Занятия будут проходить на Кавказе под руководством опытных инструкторов клуба.</p>
+              </article>
+            </a>
+          </li>
+
+          <li class="home-main__news-item">
+            <a href="#" class="news">
+              <article class="news__container">
+                <div class="news__image">
+                  <img src="./images/4.jpg" alt="Альпинист">
+                </div>
+                <span class="news__date">23.04.2011</span>
+                <h3 class="news__title">Проведён субботник на территории альплагеря</h3>
+                <p class="news__paragraph">Участники клуба приняли участие в ежегодной экологической акции и очистили подножие горы от мусора, оставленного туристами за летний сезон. Собрано более 150 кг отходов, часть из которых будет отправлена на переработку. Благодарим всех, кто присоединился и поддержал движение за чистые горы.</p>
+              </article>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="home-main__section home-main__gallery">
+        <div class="home-main__gallery-item home-main__gallery-more">
+          <h2>Галерея</h2>
+          <p>Все фото и видео...</p>
+          <a href="#">
+            <img src="./images/arrow.svg" alt="Стрелка в право">
+          </a>
+        </div>
+        <div class="carousel">
+          <div class="carousel-track">
+            <!-- основной набор -->
+            <img class="home-main__gallery-item" src="./images/1.jpg" loading="lazy" alt="Альпинист">
+            <img class="home-main__gallery-item" src="./images/2.jpg" loading="lazy" alt="Альпинист">
+            <img class="home-main__gallery-item" src="./images/3.jpg" loading="lazy" alt="Альпинист">
+            <img class="home-main__gallery-item" src="./images/4.jpg" loading="lazy" alt="Альпинист">
+            <img class="home-main__gallery-item" src="./images/5.jpg" loading="lazy" alt="Альпинист">
+            <img class="home-main__gallery-item" src="./images/6.jpg" loading="lazy" alt="Альпинист">
+        
+            <!-- дубликат -->
+            <img class="home-main__gallery-item" src="./images/1.jpg" loading="lazy" alt="Альпинист">
+            <img class="home-main__gallery-item" src="./images/2.jpg" loading="lazy" alt="Альпинист">
+            <img class="home-main__gallery-item" src="./images/3.jpg" loading="lazy" alt="Альпинист">
+            <img class="home-main__gallery-item" src="./images/4.jpg" loading="lazy" alt="Альпинист">
+            <img class="home-main__gallery-item" src="./images/5.jpg" loading="lazy" alt="Альпинист">
+            <img class="home-main__gallery-item" src="./images/6.jpg" loading="lazy" alt="Альпинист">
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__logo logo">
+        <img src="./images/logo.png" alt="Логотип сайта" />
+      </div>
+      <nav class="menu-list">
+        <a href="#" class="menu-link menu-link_active"
+          >Главная</a
+        >
+        <a href="#" class="menu-link">История клуба</a>
+        <a href="#" class="menu-link">О нас</a>
+        <a href="#" class="menu-link">Тренировки</a>
+        <a href="#" class="menu-link">Мероприятия и события</a>
+        <a href="#" class="menu-link">Новости</a>
+        <a href="#" class="menu-link">Интересные статьи</a>
+        <a href="#" class="menu-link">Галерея</a>
+      </nav>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

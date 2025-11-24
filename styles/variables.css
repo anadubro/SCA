@@ -1,0 +1,10 @@
+:root {
+  --font-size-menu: 14px;
+  --font-size-text: 16px;
+  --font-size-button: 16px;
+  --font-size-h1: 40px;
+  --font-size-h2: 35px;
+
+  --before-color-circle: rgba(140 255 0 / 20%);
+  --after-color-circle: rgb(0 105 255 / 15%);
+}
