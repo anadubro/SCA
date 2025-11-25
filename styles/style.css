@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   min-inline-size: 375px;
   max-inline-size: 1240px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 h1,
@@ -263,7 +263,8 @@ p {
 }
 
 .home-main__gallery-more a {
-  transition: transform 0.5s;}
+  transition: transform 0.5s;
+}
 
 .home-main__gallery-more:hover a {
   transform: scale(1.5);
@@ -274,13 +275,13 @@ p {
 }
 
 .home-main__gallery-more h2 {
-  font-size: var(--font-size-h2)
+  font-size: var(--font-size-h2);
 }
 
 .home-main__gallery-item {
   width: 300px;
   height: 200px;
-  border-radius: 4%
+  border-radius: 4%;
 }
 
 .home-main__gallery {
@@ -359,6 +360,54 @@ p {
 .articles__paragraph {
   margin-block-start: 20px;
   text-align: justify;
+}
+
+.articles__button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-block: 15px;
+  border: 1px solid #000;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.articles__button img {
+  transition: transform 1.5s;
+}
+
+.articles__button:hover img {
+  transform: scale(1.5);
+}
+
+.articles__button::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--before-color-circle);
+  inset: 3px 0 0 -22px;
+  z-index: 0;
+  width: 90px;
+  height: 90px;
+}
+
+.articles__button::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--after-color-circle);
+  inset: -44px 0 0 128px;
+  z-index: 0;
+  width: 90px;
+  height: 90px;
+}
+
+.articles__button * {
+  z-index: 10;
 }
 
 /* footer */
