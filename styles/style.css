@@ -324,6 +324,10 @@ p {
   gap: 30px;
 }
 
+.home-main__articles-item:hover {
+  box-shadow: 0px 20px 20px 0px #e1e1e1;
+}
+
 .articles__container {
   display: flex;
   flex-direction: row;
